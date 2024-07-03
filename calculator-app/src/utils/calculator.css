@@ -1,0 +1,91 @@
+body{
+    background-color: rgba(102, 51, 153, 0.473);
+}
+
+#calculator{
+    width: auto;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    margin-top: 50px;
+}
+
+#head{
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+    font-family: 'Courier New', Courier;
+    color: white;
+}
+
+
+#head>h1{
+    margin: 0px;
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+
+#head>h4{
+    margin: 5px;
+    padding: 0px;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+#containerDiv{
+    width: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+#opDiv{
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+    text-align: right;
+    padding-right: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#btnDiv{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 3px;
+    padding: 10px;
+    width:fit-content;
+
+}
+
+.num, .operator{
+    height: 55px;
+    border: solid 2px lightgrey;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.operator{
+    background-color: rgb(255, 207, 149);
+}
+
+.num{
+    background-color: rgb(255, 241, 224);
+}
+
+.num:hover{
+    background-color: rgba(255, 228, 196);
+    cursor: pointer;
+}
+
+.operator:hover{
+    background-color: rgb(255, 182, 94);
+    cursor: pointer;
+}
